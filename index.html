@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leather Jacket Customization Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .jacket {
+            width: 300px;
+            height: 400px;
+            background-image: url('https://i.imgur.com/7YGjwyQ.png'); /* Image from Imgur */
+            background-size: cover;
+            margin: 0 auto;
+        }
+        .color-options button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            transition: background-color 0.3s;
+        }
+        .color-options button:hover {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>Customize Your Leather Jacket</h1>
+    <div class="jacket" id="jacket"></div>
+    <div class="color-options">
+        <h3>Select a color:</h3>
+        <button onclick="changeColor('#6c3319')">Brown</button>
+        <button onclick="changeColor('#1c1c1c')">Black</button>
+        <button onclick="changeColor('#b5651d')">Tan</button>
+    </div>
+
+    <script>
+        function changeColor(color) {
+            document.getElementById('jacket').style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
